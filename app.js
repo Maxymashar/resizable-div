@@ -49,6 +49,7 @@ resBottomLeft.addEventListener('mousedown', () => {
 });
 
 resTopLeft.addEventListener('mousedown', () => {
+  originalBoxRight = null;
   const resize = ({ clientX, clientY }) => {
     const { right, left, bottom, top } = box.getBoundingClientRect();
 
